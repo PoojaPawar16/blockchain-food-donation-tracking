@@ -1,0 +1,1056 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+    background: #f7faf8;
+    color: #193b31;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5ece9;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    height: 76px;
+    margin: auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #216c58;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    background: #e6f4ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.nav-links a {
+    color: #536d64;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #287a64;
+}
+
+
+/* METAMASK */
+
+.connect-wallet-btn {
+    border: 1px solid #d8e7df;
+    background: #ffffff;
+    color: #216c58;
+    padding: 13px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.connect-wallet-btn:hover {
+    background: #edf7f2;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 560px;
+    padding: 75px 30px 85px;
+    background:
+        radial-gradient(
+            circle at 90% 30%,
+            #e6f4ee 0,
+            transparent 32%
+        ),
+        #f7faf8;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 75px;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-badge {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 13px;
+    margin-bottom: 23px;
+    background: #e4f3ed;
+    border-radius: 30px;
+    color: #28745f;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #43a47f;
+}
+
+
+/* HERO TITLE */
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+    color: #193b31;
+    margin-bottom: 26px;
+}
+
+.hero h1 span {
+    color: #2d8369;
+}
+
+
+/* HERO DESCRIPTION */
+
+.hero-content > p {
+    max-width: 610px;
+    color: #657b72;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.primary-btn,
+.outline-btn {
+    min-height: 50px;
+    padding: 0 23px;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.2s ease;
+}
+
+.primary-btn {
+    border: none;
+    background: #287a64;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #216550;
+    transform: translateY(-1px);
+}
+
+.outline-btn {
+    border: 1px solid #cbded5;
+    background: #ffffff;
+    color: #28745f;
+}
+
+.outline-btn:hover {
+    background: #edf7f2;
+}
+
+
+/* HERO NOTE */
+
+.hero-note {
+    margin-top: 23px;
+    color: #81938b;
+    font-size: 12px;
+}
+
+.hero-note span {
+    color: #32916d;
+    font-weight: 900;
+}
+
+.hero-note b {
+    margin: 0 4px;
+    color: #a4b1ac;
+}
+
+
+/* =========================================
+   BLOCKCHAIN CARD
+========================================= */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.blockchain-card {
+    width: 400px;
+    padding: 31px;
+    background: #ffffff;
+    border: 1px solid #dfeae5;
+    border-radius: 23px;
+    box-shadow:
+        0 25px 60px rgba(39, 83, 68, 0.11);
+}
+
+.blockchain-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blockchain-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: #e5f3ed;
+    color: #287a64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.verified-label {
+    color: #359b74;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.blockchain-card h3 {
+    color: #214b3e;
+    font-size: 21px;
+}
+
+.blockchain-line {
+    height: 1px;
+    background: #e6eeea;
+    margin: 28px 0;
+}
+
+.blockchain-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blockchain-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.blockchain-info span,
+.block span {
+    color: #91a19a;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.blockchain-info strong {
+    color: #315d50;
+    font-size: 14px;
+}
+
+.online {
+    color: #35946f !important;
+}
+
+.blockchain-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    margin-top: 27px;
+}
+
+.block {
+    padding: 17px;
+    border-radius: 13px;
+    background: #f4f9f7;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.block strong {
+    color: #315d50;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.stats {
+    background: #ffffff;
+    border-top: 1px solid #e5ece9;
+    border-bottom: 1px solid #e5ece9;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 27px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    border-right: 1px solid #e8efeb;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-icon {
+    width: 47px;
+    height: 47px;
+    border-radius: 13px;
+    background: #e9f5f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.stat-item h2 {
+    color: #21493d;
+    font-size: 25px;
+}
+
+.stat-item p {
+    margin-top: 3px;
+    color: #899991;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   DONATION SECTION
+========================================= */
+
+.donations-section {
+    padding: 90px 30px;
+    background: #f7faf8;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    color: #32916d;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.section-title-row h2,
+.center-title h2 {
+    color: #1d4236;
+    font-size: 36px;
+    margin-top: 7px;
+}
+
+.section-title-row p,
+.center-title p {
+    color: #778b83;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+
+/* NEW DONATION BUTTON */
+
+.small-primary-btn {
+    border: none;
+    background: #287a64;
+    color: white;
+    padding: 13px 19px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.small-primary-btn:hover {
+    background: #216550;
+}
+
+
+/* =========================================
+   DONATION TABLE
+========================================= */
+
+.donation-table {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dfeae5;
+    border-radius: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-shadow:
+        0 10px 35px rgba(40, 83, 67, 0.05);
+}
+
+.table-header {
+    min-height: 65px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns:
+        0.6fr
+        1.4fr
+        1.2fr
+        1fr
+        1.2fr
+        1.4fr
+        1fr;
+    align-items: center;
+    background: #f0f7f4;
+    color: #71857d;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+}
+
+.table-row {
+    min-height: 67px;
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns:
+        0.6fr
+        1.4fr
+        1.2fr
+        1fr
+        1.2fr
+        1.4fr
+        1fr;
+    align-items: center;
+    color: #435f55;
+    font-size: 14px;
+    border-top: 1px solid #edf2ef;
+}
+
+.table-row:hover {
+    background: #fbfdfc;
+}
+
+.empty-state {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #899890;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+/* Original status badge */
+.status {
+    width: fit-content;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.status.donated {
+    background: #e9f2ff;
+    color: #4777a8;
+}
+
+.status.received {
+    background: #fff3d9;
+    color: #aa7c29;
+}
+
+.status.distributed {
+    background: #e4f5eb;
+    color: #31805d;
+}
+
+
+/* =========================================
+   STATUS DROPDOWN
+========================================= */
+
+.status-select {
+    border: none;
+    outline: none;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    appearance: none;
+    text-align: center;
+}
+
+.status-select.donated {
+    background: #e9f2ff;
+    color: #4777a8;
+}
+
+.status-select.received {
+    background: #fff3d9;
+    color: #aa7c29;
+}
+
+.status-select.distributed {
+    background: #e4f5eb;
+    color: #31805d;
+}
+
+.status-select:focus {
+    box-shadow:
+        0 0 0 3px rgba(53, 148, 111, 0.12);
+}
+
+
+/* =========================================
+   HOW IT WORKS
+========================================= */
+
+.how-section {
+    padding: 90px 30px;
+    background: #ffffff;
+}
+
+.center-title {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 58px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step {
+    position: relative;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.step-circle {
+    position: absolute;
+    top: -4px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e6f3ee;
+    color: #287a64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.step-icon {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 19px;
+    border-radius: 18px;
+    background: #eaf5f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.step h3 {
+    color: #294d41;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #81918b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    padding: 36px 30px;
+    background: #193b31;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-logo {
+    color: white;
+}
+
+.footer-logo .logo-icon {
+    background: #285b4c;
+}
+
+.footer-brand p {
+    color: #abc0b8;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #a9bdb6;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   DONATION MODAL
+========================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(21, 49, 40, 0.48);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.donation-modal {
+    width: 100%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 32px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 30px 80px rgba(18, 54, 43, 0.25);
+}
+
+.close-modal {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #f0f5f3;
+    color: #536c63;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-label {
+    color: #35946f;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.donation-modal h2 {
+    color: #21493d;
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.modal-description {
+    color: #82928b;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+
+/* FORM */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    color: #405e54;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 46px;
+    padding: 0 13px;
+    border: 1px solid #d8e5df;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #344f46;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #35946f;
+    box-shadow:
+        0 0 0 3px rgba(53, 148, 111, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #a0aea8;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* FORM ACTIONS */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.cancel-btn,
+.submit-btn {
+    height: 45px;
+    padding: 0 18px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cancel-btn {
+    border: 1px solid #d7e3de;
+    background: #ffffff;
+    color: #587067;
+}
+
+.submit-btn {
+    border: none;
+    background: #287a64;
+    color: #ffffff;
+}
+
+.submit-btn:hover {
+    background: #216550;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .hero-badge {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-note {
+        text-align: center;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 45px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar-container {
+        height: auto;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -1px;
+    }
+
+    .hero-content > p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .primary-btn,
+    .outline-btn {
+        width: 100%;
+    }
+
+    .blockchain-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .donations-section,
+    .how-section {
+        padding: 65px 20px;
+    }
+
+    .section-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-header,
+    .table-row {
+        grid-template-columns:
+            60px
+            150px
+            120px
+            100px
+            120px
+            150px
+            100px;
+        padding: 0 12px;
+        font-size: 11px;
+        min-width: 900px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .connect-wallet-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .blockchain-info {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        border-right: none;
+        border-bottom: 1px solid #e8efeb;
+        padding-bottom: 20px;
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .donation-modal {
+        padding: 25px;
+    }
+}
