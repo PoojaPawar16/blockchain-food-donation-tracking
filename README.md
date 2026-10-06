@@ -25,6 +25,7 @@ Blockchain is used as the trusted record layer for the donation process.
 
 The basic workflow is:
 
+```text
 Donor Wallet
      ↓
 Connect MetaMask
